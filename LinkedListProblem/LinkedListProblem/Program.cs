@@ -23,7 +23,8 @@ namespace LinkedListProblem
                                    "6.Remove Last Node\n" +
                                    "7. Search Node Position\n" +
                                    "8.List Size\n"+
-                                   "9.Exit\n");
+                                   "9.Delete Node At particular Position\n"+
+                                   "10.Exit\n");
                 int options = Convert.ToInt32(Console.ReadLine());
                 switch (options)
                 {
@@ -62,6 +63,11 @@ namespace LinkedListProblem
                         list.Size();
                         break;
                     case 9:
+                        Console.WriteLine("Enter the Position present in List to Delete");
+                        int delete = Convert.ToInt32(Console.ReadLine());
+                        list.DeleteNodeAtParticularPosition(list.Search(delete));
+                        break;
+                    case 10:
                         flag = false;
                         break;
                 }
