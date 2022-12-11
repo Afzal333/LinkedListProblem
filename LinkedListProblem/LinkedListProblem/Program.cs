@@ -19,7 +19,8 @@ namespace LinkedListProblem
                                    "2.Display\n" +
                                    "3.Add Data In Reverse Order\n"+
                                    "4.Insert Data At Particular Position"+
-                                   "5.Exit");
+                                   "5. Remove First Element"+
+                                   "6.Exit");
                 int options = Convert.ToInt32(Console.ReadLine());
                 switch (options)
                 {
@@ -43,6 +44,9 @@ namespace LinkedListProblem
                         list.InsertAtParticuarPosition(1, 30);                        
                         break;
                     case 5:
+                        list.RemoveFirstNode();                       
+                        break;
+                    case 6:
                         flag = false;
                         break;
                 }
