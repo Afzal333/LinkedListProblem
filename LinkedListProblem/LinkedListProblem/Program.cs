@@ -24,7 +24,8 @@ namespace LinkedListProblem
                                    "7. Search Node Position\n" +
                                    "8.List Size\n"+
                                    "9.Delete Node At particular Position\n"+
-                                   "10.Exit\n");
+                                   "10.Insert Node at Particular Existing Position\n"+
+                                   "11.Exit\n");
                 int options = Convert.ToInt32(Console.ReadLine());
                 switch (options)
                 {
@@ -68,6 +69,14 @@ namespace LinkedListProblem
                         list.DeleteNodeAtParticularPosition(list.Search(delete));
                         break;
                     case 10:
+                        Console.WriteLine("Enter the Position present in List to Insert");
+                        int Insert = Convert.ToInt32(Console.ReadLine());
+                        int position = list.Search(Insert);
+                        Console.WriteLine("Enter the value to Insert");
+                        int value = Convert.ToInt32(Console.ReadLine());
+                        list.InsertAtParticuarPosition(position + 1, value);
+                        break;
+                    case 11:
                         flag = false;
                         break;
                 }
