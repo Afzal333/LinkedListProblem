@@ -18,9 +18,10 @@ namespace LinkedListProblem
                                    "1.Create LinkedList\n" +
                                    "2.Display\n" +
                                    "3.Add Data In Reverse Order\n"+
-                                   "4.Insert Data At Particular Position"+
-                                   "5. Remove First Element"+
-                                   "6.Exit");
+                                   "4.Insert Data At Particular Position\n" +
+                                   "5.Remove First Element\n" +
+                                   "6.Remove Last Node\n" +
+                                   "7.Exit");
                 int options = Convert.ToInt32(Console.ReadLine());
                 switch (options)
                 {
@@ -46,7 +47,10 @@ namespace LinkedListProblem
                     case 5:
                         list.RemoveFirstNode();                       
                         break;
-                    case 6:
+                    case 6:                       
+                        list.RemoveLastNode();                        
+                        break;
+                    case 7:
                         flag = false;
                         break;
                 }

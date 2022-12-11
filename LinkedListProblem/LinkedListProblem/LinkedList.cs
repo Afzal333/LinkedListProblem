@@ -79,6 +79,25 @@ namespace LinkedListProblem
             Console.WriteLine("First element is deleted successfully");
         }
 
+        public void RemoveLastNode()
+        {
+            if (this.head == null)
+            {
+                Console.WriteLine("LinkedList is empty");
+            }
+            if (head.next == null)
+            {
+                head = null;
+            }
+            Node lastNode = this.head;
+            while (lastNode.next.next != null)
+            {
+                lastNode = lastNode.next;
+            }
+            lastNode.next = null;
+            Console.WriteLine("Last element is deleted successfully");
+        }
+
         public void Display()
         {
             Node temp = this.head;
