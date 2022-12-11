@@ -114,6 +114,23 @@ namespace LinkedListProblem
             }
             return count;
         }
+        public void Size()
+        {
+            Node temp = this.head;
+            int count = 0;
+            if (temp == null)
+            {
+                Console.WriteLine("LinkedList is empty");
+            }
+            Console.Write("LinkedList is as : ");
+            while (temp != null)
+            {
+                Console.Write(temp.data + " ");
+                temp = temp.next;
+                count++;
+            }
+            Console.WriteLine("\nSize of LinkedList is " + count);
+        }
 
         public void Display()
         {

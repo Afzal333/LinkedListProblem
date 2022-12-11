@@ -10,7 +10,7 @@ namespace LinkedListProblem
         static void Main(string[] args)
         {
             LinkedList list = new LinkedList();
-            Console.WriteLine("Welcome to the LinkedList Operations");
+            Console.WriteLine("\nWelcome to the LinkedList Operations");
             bool flag = true;
             while (flag)
             {
@@ -22,7 +22,8 @@ namespace LinkedListProblem
                                    "5.Remove First Element\n" +
                                    "6.Remove Last Node\n" +
                                    "7. Search Node Position\n" +
-                                   "8.Exit\n");
+                                   "8.List Size\n"+
+                                   "9.Exit\n");
                 int options = Convert.ToInt32(Console.ReadLine());
                 switch (options)
                 {
@@ -58,6 +59,9 @@ namespace LinkedListProblem
                         Console.WriteLine("The Position of Node in LinkedList is " + find);
                         break;
                     case 8:
+                        list.Size();
+                        break;
+                    case 9:
                         flag = false;
                         break;
                 }
