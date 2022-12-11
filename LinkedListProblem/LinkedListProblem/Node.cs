@@ -4,13 +4,13 @@ using System.Text;
 
 namespace LinkedListProblem
 {
-    public class Node<T>
+    public class Node
     {
-        public T data;
-        public Node<T> next;
-        public Node(T data)
+        public int data;
+        public Node next;
+        public Node(int data)
         {
-            this.data = data;            
+            this.data = data;
         }
     }
 }
