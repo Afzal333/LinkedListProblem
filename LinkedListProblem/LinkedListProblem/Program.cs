@@ -18,7 +18,8 @@ namespace LinkedListProblem
                                    "1.Create LinkedList\n" +
                                    "2.Display\n" +
                                    "3.Add Data In Reverse Order\n"+
-                                   "4.Exit");
+                                   "4.Insert Data At Particular Position"+
+                                   "5.Exit");
                 int options = Convert.ToInt32(Console.ReadLine());
                 switch (options)
                 {
@@ -36,6 +37,12 @@ namespace LinkedListProblem
                         list.AddInReverseOrder(56);
                         break;
                     case 4:
+                        list.Add(56);
+                        list.Add(70);
+                        list.Display();
+                        list.InsertAtParticuarPosition(1, 30);                        
+                        break;
+                    case 5:
                         flag = false;
                         break;
                 }
