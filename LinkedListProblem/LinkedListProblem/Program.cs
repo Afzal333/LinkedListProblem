@@ -21,7 +21,8 @@ namespace LinkedListProblem
                                    "4.Insert Data At Particular Position\n" +
                                    "5.Remove First Element\n" +
                                    "6.Remove Last Node\n" +
-                                   "7.Exit");
+                                   "7. Search Node Position\n" +
+                                   "8.Exit\n");
                 int options = Convert.ToInt32(Console.ReadLine());
                 switch (options)
                 {
@@ -51,6 +52,12 @@ namespace LinkedListProblem
                         list.RemoveLastNode();                        
                         break;
                     case 7:
+                        Console.WriteLine("Enter the Value present in List to find Position");
+                        int option = Convert.ToInt32(Console.ReadLine());
+                        int find = list.Search(option);
+                        Console.WriteLine("The Position of Node in LinkedList is " + find);
+                        break;
+                    case 8:
                         flag = false;
                         break;
                 }
