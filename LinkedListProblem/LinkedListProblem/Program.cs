@@ -17,7 +17,8 @@ namespace LinkedListProblem
                 Console.WriteLine("Select the operation to perform\n" +
                                    "1.Create LinkedList\n" +
                                    "2.Display\n" +
-                                   "3.Exit");
+                                   "3.Add Data In Reverse Order\n"+
+                                   "4.Exit");
                 int options = Convert.ToInt32(Console.ReadLine());
                 switch (options)
                 {
@@ -30,6 +31,11 @@ namespace LinkedListProblem
                         list.Display();
                         break;
                     case 3:
+                        list.AddInReverseOrder(70);
+                        list.AddInReverseOrder(30);
+                        list.AddInReverseOrder(56);
+                        break;
+                    case 4:
                         flag = false;
                         break;
                 }
